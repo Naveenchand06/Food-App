@@ -73,12 +73,9 @@ class HomeScreen extends StatelessWidget {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                        width: sw,
+                      SizedBox(
                         height: 140.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
+                        width: sw,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -113,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                                   color: Colors.white,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                       )

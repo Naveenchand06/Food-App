@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1021135554505",
+    "project_id": "food-app-8f905",
+    "storage_bucket": "food-app-8f905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021135554505:android:5aa58516b63aa8ca584a18",
+        "android_client_info": {
+          "package_name": "com.naveenchand.food_app_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021135554505-5vdo65qhgpv99lvghv8068rkbber47ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxXdRwT5QYF0eObUjAoRiSdB79b5zyWsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021135554505-5vdo65qhgpv99lvghv8068rkbber47ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
