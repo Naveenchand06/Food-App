@@ -1,27 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_ui/app/components/widgets/card_widget.dart';
-import 'package:food_app_ui/app/features/home/views/explore_screen.dart';
-import 'package:food_app_ui/app/features/home/views/demo_screen.dart';
-import 'package:food_app_ui/app/features/home/views/profile_screen.dart';
-import 'package:food_app_ui/app/features/home/widgets/section_heading_widget.dart';
-import 'package:food_app_ui/app/features/home/widgets/shaded_food_card.dart';
 import 'package:food_app_ui/utils/app_colors.dart';
-import 'package:food_app_ui/utils/contants/image_urls.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class HomeScreen extends ConsumerStatefulWidget {
-  const HomeScreen({super.key});
+class HomeScreen2 extends StatefulWidget {
+  HomeScreen2({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+  _HomeScreen2State createState() => _HomeScreen2State();
 }
 
-class _HomeScreenState extends ConsumerState<HomeScreen> {
+class _HomeScreen2State extends State<HomeScreen2> {
   int _currentIndex = 0;
-  final List<Widget> _screens = const [
-    ExploreScreen(),
-    Center(child: Icon(Icons.favorite)),
-    ProfileScreen(),
+  List<Widget> _screens = [
+    Icon(Icons.home),
+    Icon(Icons.favorite),
+    Icon(Icons.person_2_outlined),
   ];
 
   @override
