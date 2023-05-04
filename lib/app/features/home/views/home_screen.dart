@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_ui/utils/constants.dart';
-import 'package:food_app_ui/widgets/card_widget.dart';
+import 'package:food_app_ui/components/widgets/card_widget.dart';
+import 'package:food_app_ui/utils/contants/image_urls.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

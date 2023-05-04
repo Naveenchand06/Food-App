@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:food_app_ui/screens/home_screen.dart';
+import 'package:food_app_ui/app/features/authentication/views/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -16,10 +17,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Food App UI',
-      home: HomeScreen(),
+      theme: ThemeData(
+        textTheme: GoogleFonts.lexendTextTheme(),
+      ),
+      home: LoginScreen(
+        emailController: TextEditingController(),
+        passwordController: TextEditingController(),
+      ),
     );
   }
 }
