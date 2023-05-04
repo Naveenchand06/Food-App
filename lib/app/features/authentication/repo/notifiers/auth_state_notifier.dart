@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:food_app_ui/app/features/authentication/models/auth_result.dart';
 import 'package:food_app_ui/app/features/authentication/models/auth_state.dart';
 import 'package:food_app_ui/app/features/authentication/network/authenticator.dart';
@@ -8,6 +10,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 // Is Logged in Provider
 final isLoggedInProvider = Provider<bool>((ref) {
   final authState = ref.watch(authStateProvider);
+  log('The Value is 2 -> ${authState.result}');
   return authState.result == AuthResult.success;
 });
 
@@ -37,9 +40,26 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
     state = const AuthState.unknown();
   }
 
-  Future<void> login(String email, String pass) async {
+  Future<bool> login(String email, String pass) async {
     state = state.copiedWithIsLoading(true);
     final result = await _authenticator.login(email, pass);
+    final userId = _authenticator.userId;
+    state = AuthState(
+      result: result,
+      isLoading: false,
+      userId: userId,
+    );
+    log('The Value is 1-> ${state.result}');
+
+    if (result == AuthResult.success) {
+      return true;
+    }
+    return false;
+  }
+
+  Future<bool> register(String email, String pass) async {
+    state = state.copiedWithIsLoading(true);
+    final result = await _authenticator.register(email, pass);
     final userId = _authenticator.userId;
     if (result == AuthResult.success && userId != null) {
       // Save user to Users collection
@@ -50,6 +70,10 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
       isLoading: false,
       userId: userId,
     );
+    if (result == AuthResult.success) {
+      return true;
+    }
+    return false;
   }
 
   Future<void> saveUserInfo({required UserId userId}) =>

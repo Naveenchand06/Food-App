@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:food_app_ui/app/features/authentication/repo/notifiers/auth_state_notifier.dart';
 import 'package:food_app_ui/components/widgets/card_widget.dart';
 import 'package:food_app_ui/utils/contants/image_urls.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     double sw = MediaQuery.of(context).size.width;
@@ -47,7 +54,9 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () async {
+              await ref.read(authStateProvider.notifier).logOut();
+            },
             icon: const Icon(
               Icons.change_circle,
               color: Colors.grey,

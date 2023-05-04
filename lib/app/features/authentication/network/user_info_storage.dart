@@ -35,7 +35,7 @@ class UserInfoStorage {
         email: email,
       );
 
-      print('payload is -> $payload');
+      debugPrint('payload is -> $payload');
 
       await FirebaseFirestore.instance
           .collection(FirebaseCollectionName.users)

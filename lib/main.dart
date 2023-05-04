@@ -1,7 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:food_app_ui/app/features/authentication/views/login_screen.dart';
+import 'package:food_app_ui/app/app.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -9,7 +10,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -23,10 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.lexendTextTheme(),
       ),
-      home: LoginScreen(
-        emailController: TextEditingController(),
-        passwordController: TextEditingController(),
-      ),
+      home: const App(),
     );
   }
 }

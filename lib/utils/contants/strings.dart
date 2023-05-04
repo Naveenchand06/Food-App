@@ -50,6 +50,7 @@ class Strings {
   static const person = 'person';
   static const people = 'people';
   static const likedThis = 'liked this';
+  static const ok = 'OK';
 
   static const delete = 'Delete';
   static const areYouSureYouWantToDeleteThis =

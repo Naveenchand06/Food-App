@@ -26,4 +26,15 @@ class Authenticator {
       return AuthResult.failure;
     }
   }
+
+  /// Register
+  Future<AuthResult> register(String email, String pass) async {
+    try {
+      await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: pass);
+      return AuthResult.success;
+    } catch (e) {
+      return AuthResult.failure;
+    }
+  }
 }

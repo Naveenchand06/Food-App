@@ -45,12 +45,14 @@ class _CommonTextFieldState extends State<CommonTextField> {
       keyboardType: widget.keyboardType,
       textInputAction: widget.fieldAction,
       obscureText: widget.isPassword ? showPassword : false,
+      style: const TextStyle(fontSize: 12.0, color: Colors.black),
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.grey.shade100,
         hintText: widget.hintText,
-        hintStyle: const TextStyle(
+        hintStyle: TextStyle(
           fontSize: 12.0,
+          color: Colors.grey.shade700,
         ),
         suffixIcon: widget.isPassword
             ? IconButton(
