@@ -6,8 +6,8 @@ import 'package:food_app_ui/utils/contants/strings.dart';
 class LoginFailureDialog extends AlertDialogModel<bool> {
   const LoginFailureDialog()
       : super(
-          title: 'Error',
-          message: 'Invalid Credentials',
+          message: '',
+          title: 'Invalid Credentials',
           buttons: const {
             Strings.ok: false,
           },
