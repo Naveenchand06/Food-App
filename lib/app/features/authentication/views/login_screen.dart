@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_app_ui/app/dialogs/alert_dialog_model.dart';
 import 'package:food_app_ui/app/dialogs/login_failure_dialog.dart';
 import 'package:food_app_ui/app/features/authentication/repo/notifiers/auth_state_notifier.dart';
-import 'package:food_app_ui/components/widgets/common_button.dart';
-import 'package:food_app_ui/components/widgets/common_text_field.dart';
+import 'package:food_app_ui/app/components/widgets/common_button.dart';
+import 'package:food_app_ui/app/components/widgets/common_text_field.dart';
 import 'package:food_app_ui/utils/app_colors.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
