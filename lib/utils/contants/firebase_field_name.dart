@@ -8,12 +8,14 @@ class FirebaseFieldName {
   static const email = 'email';
 
   // Dish collection keys
-  static const name = 'name';
+  static const recipeName = 'recipe_name';
   static const desc = 'desc';
-  static const foodCategory = 'food_category';
+  static const imageUrl = 'image_url';
+  static const category = 'category';
   static const cuisine = 'cuisine';
-  static const imageUrl = 'email';
   static const ingredients = 'ingredients';
+  static const instructions = 'instructions';
+  static const tags = 'tags';
 
   const FirebaseFieldName._();
 }

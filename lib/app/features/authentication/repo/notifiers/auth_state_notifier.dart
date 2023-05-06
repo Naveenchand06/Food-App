@@ -10,7 +10,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 // Is Logged in Provider
 final isLoggedInProvider = Provider<bool>((ref) {
   final authState = ref.watch(authStateProvider);
-  log('The Value is 2 -> ${authState.result}');
   return authState.result == AuthResult.success;
 });
 
@@ -49,7 +48,6 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
       isLoading: false,
       userId: userId,
     );
-    log('The Value is 1-> ${state.result}');
 
     if (result == AuthResult.success) {
       return true;
