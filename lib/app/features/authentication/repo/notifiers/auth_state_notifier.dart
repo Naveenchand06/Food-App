@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:food_app_ui/app/features/authentication/models/auth_result.dart';
 import 'package:food_app_ui/app/features/authentication/models/auth_state.dart';
 import 'package:food_app_ui/app/features/authentication/network/authenticator.dart';

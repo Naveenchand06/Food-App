@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_ui/app/components/widgets/card_widget.dart';
 import 'package:food_app_ui/app/features/home/views/explore_screen.dart';
-import 'package:food_app_ui/app/features/home/views/demo_screen.dart';
 import 'package:food_app_ui/app/features/home/views/profile_screen.dart';
-import 'package:food_app_ui/app/features/home/widgets/section_heading_widget.dart';
-import 'package:food_app_ui/app/features/home/widgets/shaded_food_card.dart';
 import 'package:food_app_ui/utils/app_colors.dart';
-import 'package:food_app_ui/utils/contants/image_urls.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
