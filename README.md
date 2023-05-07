@@ -1,6 +1,8 @@
-# Food App UI
+# Food App
 
-A new Flutter project.
+A new project related to food.
+
+##### Author: [Naveenchand](https://github.com/Naveenchand06)
 
 ## Getting Started
 

@@ -12,20 +12,22 @@ class ProfileScreen extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text('Email: ${userData?.email ?? '-'}'),
-          const SizedBox(height: 20.0),
-          Text('UID: ${userData?.uid ?? '-'}'),
-          const SizedBox(height: 20.0),
-          ElevatedButton.icon(
-            onPressed: () => ref.read(authStateProvider.notifier).logOut(),
-            icon: const Icon(Icons.logout_rounded),
-            label: const Text('Logout'),
-          )
-        ],
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Email: ${userData?.email ?? '-'}'),
+            const SizedBox(height: 20.0),
+            Text('UID: ${userData?.uid ?? '-'}'),
+            const SizedBox(height: 20.0),
+            ElevatedButton.icon(
+              onPressed: () => ref.read(authStateProvider.notifier).logOut(),
+              icon: const Icon(Icons.logout_rounded),
+              label: const Text('Logout'),
+            )
+          ],
+        ),
       ),
     );
   }
