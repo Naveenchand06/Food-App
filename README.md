@@ -20,12 +20,18 @@ samples, guidance on mobile development, and a full API reference.
 ## Screenshots
 
 <p float="left">
+<img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/onboard-1.jpeg" width="250" height="500">
+<img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/onboard-2.jpeg" width="250" height="500">
+<img src="https://raw.githubusercontent.com/Naveenchand06/Food-App/master/assets/screenshots/onboard-3.jpeg" width="250" height="500">
+</p>
+
+<p float="left">
 <img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/login.jpeg" width="250" height="500">
 <img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/register.jpeg" width="250" height="500">
 <img src="https://raw.githubusercontent.com/Naveenchand06/Food-App/master/assets/screenshots/loading.jpeg" width="250" height="500">
 </p>
-<p float="left">
 
+<p float="left">
 <img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/error.jpeg" width="250" height="500">
 <img src="https://github.com/Naveenchand06/Food-App/raw/master/assets/screenshots/explore-screen.jpeg" width="250" height="500">
 </p>
