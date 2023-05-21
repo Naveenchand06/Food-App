@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app_ui/app/app.dart';
+import 'package:food_app_ui/app/features/authentication/views/onboarding_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'firebase_options.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.lexendTextTheme(),
       ),
-      home: const App(),
+      home: OnBoardingScreen(),
     );
   }
 }
